@@ -228,17 +228,17 @@ def update_map_and_event_and_weather(date, hour):
         
     #conditions for update to happen
     if len(humidity) > 0:
-        humidity = humidity[0]
+        humidity = str(humidity)[1:6]
     else:
         humidity = "No data on selected date/time"
 
     if len(rainin) > 0:
-        rainin = rainin[0]  
+        rainin = rainin[0] 
     else:
         rainin = "No data on selected date/time"
 
     if len(temp_qcl3) > 0:
-        temp_qcl3 = temp_qcl3[0]  
+        temp_qcl3 = str(temp_qcl3)[1:5]
     else:
         temp_qcl3 = "No data on selected date/time"
 
