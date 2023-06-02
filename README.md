@@ -2,7 +2,7 @@
 # 🌇 MDA Exam Project
 This project is done for the assignment project of Modern Data Analytics in academic year 2022-2023.
 All files used for all phases of the project can be found here. 
-Files that are not used for the final iteration of the application can be seen in the "archive" subdirectory.
+Files that are not used for the final iteration of the application can be seen in the "archive" subdirectories of every main folder.
 
 ## Table of Contents
 - [01_Data_collection](https://github.com/SarahSchrevens/MDA_project/tree/main/01_Data_collection)
@@ -19,7 +19,7 @@ Files that are not used for the final iteration of the application can be seen i
 This folder has Jupyter Notebooks on the preprocessing steps used for the weather data given for the project.
 
 ## 3️⃣ Noise_modelling
-
+This folder comprises of the model training itself in regards to the noise data being predicted by several variables.
 
 ## 4️⃣ App
 This folder contains the scripts used for constructing the application itself.
