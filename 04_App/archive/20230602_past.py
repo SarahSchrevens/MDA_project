@@ -10,7 +10,7 @@ from datetime import date, timedelta
 def plot_map(date, hour):
 
     # Load the dataset with noise data
-    data = pd.read_csv('https://mda-noise.s3.eu-central-1.amazonaws.com/mergeddf01_df09.csv')
+    data = pd.read_csv('mergeddf01_df09.csv')
 
     # Transform first
     data['day'] = pd.to_datetime(data['day'])  # Convert the filter date to datetime type
@@ -78,7 +78,7 @@ def plot_map(date, hour):
     return fig
 
 app = Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
-server = app.server
+
 # define backgorund of app 
 colors = {
     'background': '#111111',
@@ -190,7 +190,7 @@ def update_map_and_event_and_weather(date, hour):
     selected_datetime = pd.to_datetime(date)
 
     #depot update
-    event_data_depot = pd.read_csv('https://mda-noise.s3.eu-central-1.amazonaws.com/depot.csv')
+    event_data_depot = pd.read_csv('depot.csv')
     event_data_depot['StartDate'] = pd.to_datetime(event_data_depot['StartDate'])  # Convert StartDate to datetime type
     event_data_depot['EndDate'] = pd.to_datetime(event_data_depot['EndDate'])  # Convert EndDate to datetime type
     event_title = event_data_depot[
@@ -199,7 +199,7 @@ def update_map_and_event_and_weather(date, hour):
     ]['Event Name'].tolist()
 
     #loko update
-    event_data_loko = pd.read_csv('https://mda-noise.s3.eu-central-1.amazonaws.com/events_loko.csv')
+    event_data_loko = pd.read_csv('loko.csv')
     event_data_loko['startdate'] = pd.to_datetime(event_data_loko['startdate'])  # Convert StartDate to datetime type
     event_data_loko['enddate'] = pd.to_datetime(event_data_loko['enddate'])  # Convert EndDate to datetime type
     event_title2 = event_data_loko[
@@ -208,7 +208,7 @@ def update_map_and_event_and_weather(date, hour):
     ]['event'].tolist()
 
     #school update
-    event_data_school = pd.read_csv('https://mda-noise.s3.eu-central-1.amazonaws.com/school_holidays_belg.csv', encoding="mac_roman")
+    event_data_school = pd.read_csv('holidays.csv', encoding="mac_roman")
     event_data_school['StartDate'] = pd.to_datetime(event_data_school['StartDate'])  # Convert StartDate to datetime type
     event_data_school['EndDate'] = pd.to_datetime(event_data_school['EndDate'])  # Convert EndDate to datetime type
     event_title3 = event_data_school[
@@ -217,7 +217,7 @@ def update_map_and_event_and_weather(date, hour):
     ]['Holiday'].tolist()
 
     #weather update
-    data = pd.read_csv('https://mda-noise.s3.eu-central-1.amazonaws.com/mergeddf01_df09.csv')
+    data = pd.read_csv('mergeddf01_df09.csv')
     data['day'] = pd.to_datetime(data['day'])
     selected_data = data[(data['day'] == date) & (data['start_hour'] == hour)]
     humidity = selected_data[(selected_data['day'].dt.date <= selected_datetime.date())]['LC_HUMIDITY'].tolist()
