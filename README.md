@@ -31,18 +31,19 @@ This folder comprises of the model training itself in regards to the noise data 
 This folder contains the scripts used for applications.
 We made two applications, which show real-time data and past related data.
 The frameworks of both apps are Plotly Dash.
-###　Real-time app
-This app displays real-time weather and event data, and predicts the crowdedness in places near Naamse straat.
-The real-time weather data is collected by Weather Forecast API [Open-Meteo](https://open-meteo.com/), which allows us to gather current hourly weather data with high resolution. The events data were collected by scraping the websites mentioned in the 1️⃣ Data_collection.
-For applying the model, gz.files, which are uploaded in AWS, are loaded to get the predicted values.
-[Heroku](https://www.heroku.com/) is used for web deployment.
-All the files necessary for deployment are saved in [this repository](https://github.com/Shinichi99/leuven-realtime-heroku-app)
-The app URL is https://leuven-realtime-noise.herokuapp.com/
-###　Past app
-This app shows the past noise, weather and event data in Leuven. 
-For studying different tools, [Render](https://render.com/) is used for web deployment.
-All the files necessary for deployment are saved in [this repository](https://github.com/Shinichi99/leuven-past-render-app)
-The app URL is https://leuven-past-noise.onrender.com/
+### Real-time app
+- This app displays real-time weather and event data, and predicts the crowdedness in places near Naamse straat.
+- The real-time weather data is collected by Weather Forecast API [Open-Meteo](https://open-meteo.com/), which allows us to gather current hourly weather data with high resolution. 
+- The events data were collected by scraping the websites mentioned in the 1️⃣ Data_collection.
+- For applying the model, gz.files, which are uploaded in AWS, are loaded to get the predicted values.
+- [Heroku](https://www.heroku.com/) is used for web deployment.
+- All the files necessary for deployment are saved in [this repository](https://github.com/Shinichi99/leuven-realtime-heroku-app)
+- The app URL is https://leuven-realtime-noise.herokuapp.com/
+### Past app
+- This app shows the past noise, weather and event data in Leuven. 
+- For studying different tools, [Render](https://render.com/) is used for web deployment.
+- All the files necessary for deployment are saved in [this repository](https://github.com/Shinichi99/leuven-past-render-app)
+- The app URL is https://leuven-past-noise.onrender.com/
 
 In addition, we used Amazon S3 for data storage. The files uploaded to a S3 bucket is stored in [this folder](https://github.com/SarahSchrevens/MDA_project/tree/main/04_App/AWS)
 
