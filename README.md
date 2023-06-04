@@ -10,7 +10,7 @@ The goal of the project is predicting crowds by estimate the noisiness at severa
 - [04_App](https://github.com/SarahSchrevens/MDA_project/tree/main/04_App) 
 
 ## 1️⃣ Data_collection
-The provided noise data set was collected at the 9 locations in the neighbourhood of Naamsestraat in the city of Leuven in 2022.<br />
+The provided noise data set was collected at the 9 locations in the neighbourhood of Naamsestraat in 2022.<br />
 To predict noisiness, we collected several types of datasets in addition to the provided meteo data.<br />
 The codes for scraping these datasets are available in this folder.<br />
 ### Event Data
@@ -22,8 +22,8 @@ Assuming the crowdedness is influenced by the events in Leuven, we gather event 
 To get more weather data, the following source was used:
 - [wunderground](https://www.wunderground.com/weather/be/leuven/50.88,4.70)
 ## 2️⃣ Weather_Data_preprocessing
-The used meteo data source is [here](https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/SSRN3F)
-To obtain past weather data, a selection of 7 weather stations near Naamsestraat (LC:065,087,102,109,112,117,118) was made.
+The used meteo data source is [here](https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/SSRN3F)<br />
+To obtain past weather data, a selection of 7 weather stations near Naamsestraat (LC:065,087,102,109,112,117,118) was made.<br />
 These stations were used to create an averaged weather dataset.
 
 ## 3️⃣ Noise_modelling
