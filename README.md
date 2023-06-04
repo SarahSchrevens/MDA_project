@@ -48,11 +48,11 @@ The framework used for both apps was Plotly Dash.
 - The events data were collected by scraping the websites mentioned in the 1️⃣ Data_collection.
 - For applying the model, gz.files, which are uploaded in AWS, are loaded to get the predicted values.
 - [Heroku](https://www.heroku.com/) is used for web deployment.
-- All the files necessary for the deployment are saved in [this repository](https://github.com/Shinichi99/leuven-realtime-heroku-app)
+- All the files necessary for the deployment are saved in [this repository](https://github.com/Shinichi99/leuven-realtime-heroku-app).
 - The finall app URL is https://leuven-realtime-noise.herokuapp.com/
 
 In addition, we used Amazon S3 for data storage. The files uploaded to a S3 bucket is stored in [this folder](https://github.com/SarahSchrevens/MDA_project/tree/main/04_App/AWS)
 
 ## Appendix
 In this project, we utilized Python 3.9.5, which was used in the lecture, to set up a virtual environment.<br />
-The necessary packages are listed in the [requirements.txt] (https://github.com/SarahSchrevens/MDA_project/blob/main/requirements.txt) file. 
+The necessary packages are listed in the [requirements](https://github.com/SarahSchrevens/MDA_project/blob/main/requirements.txt) file. 
