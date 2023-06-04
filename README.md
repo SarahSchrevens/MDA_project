@@ -11,7 +11,7 @@ The objective of the project is to predict crowd density by estimating the noise
 
 ## 1️⃣ Data collection
 The provided noise dataset was collected for each of the 9 locations in the Naamsestraat in 2022.<br />
-To predict noisiness, we retrieved further data in addition to the provided meteo data.<br />
+To predict noisiness, we retrieved further data in addition to the provided weather data.<br />
 The code to scrape these datasets are available in the following folders:<br />
 ### Event Data
 Assuming the crowdedness is influenced by the events in Leuven, we gather data on events and holidays from the following webpages:
