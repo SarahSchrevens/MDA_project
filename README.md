@@ -19,7 +19,8 @@ Assuming the crowdedness is influenced by the events in Leuven, we gather data o
 - [LOKO](https://www.loko.be/en/past-events)
 - [Belgian schools](https://schoolvakanties-be.be/schoolvakanties-2022/)
 ### Weather Data
-To get more weather data, the [Open-Meteo](https://open-meteo.com/) source was used.
+To get more weather data, the the following open source was used:
+- [Open-Meteo](https://open-meteo.com/)
 
 ## 2️⃣ Weather Data Preprocessing
 The used meteo data source is [here](https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/SSRN3F)<br />
@@ -32,7 +33,7 @@ We created baseline thresholds for classification and developed an hourly binary
 This folder comprises the code employed to make an hourly-based feature matrix and the variables, by conducting EDA for feature selection and evaluation of the models.<br />
 The best performing model was RandomForest, through with we achieved an accuracy of approximately 80%.
 
-## 4️⃣ The app
+## 4️⃣ The apps
 This folder contains instead the scripts used for the applications.<br />
 We made two applications, which show respectively real-time data and past related data.<br />
 The framework used for both apps was Plotly Dash.
