@@ -9,7 +9,7 @@ The objective of the project is to predict crowd density by estimating the noise
 - [03_Noise_modelling](https://github.com/SarahSchrevens/MDA_project/tree/main/03_Noise_modelling) 
 - [04_App](https://github.com/SarahSchrevens/MDA_project/tree/main/04_App) 
 
-## 1️⃣ Data_collection
+## 1️⃣ Data collection
 The provided noise dataset was collected for each of the 9 locations in the Naamsestraat in 2022.<br />
 To predict noisiness, we retrieved further data in addition to the provided meteo data.<br />
 The code to scrape these datasets are available in the following folders:<br />
@@ -21,18 +21,18 @@ Assuming the crowdedness is influenced by the events in Leuven, we gather data o
 ### Weather Data
 To get more weather data, the [Open-Meteo](https://open-meteo.com/) source was used.
 
-## 2️⃣ Weather_Data_preprocessing
+## 2️⃣ Weather Data Preprocessing
 The used meteo data source is [here](https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/SSRN3F)<br />
 To obtain past weather data, a selection of 7 weather stations near Naamsestraat (LC:065,087,102,109,112,117,118) was made.<br />
 These stations were used to create an averaged weather dataset.
 
-## 3️⃣ Noise_modelling
+## 3️⃣ Noise Modeling
 We then predicted the hourly crowd levels by determining whether the location was noisier than usual.<br />
 We created baseline thresholds for classification and developed an hourly binary classification model.<br />
 This folder comprises the code employed to make an hourly-based feature matrix and the variables, by conducting EDA for feature selection and evaluation of the models.<br />
 The best performing model was RandomForest, through with we achieved an accuracy of approximately 80%.
 
-## 4️⃣ App
+## 4️⃣ The app
 This folder contains instead the scripts used for the applications.<br />
 We made two applications, which show respectively real-time data and past related data.<br />
 The framework used for both apps was Plotly Dash.
