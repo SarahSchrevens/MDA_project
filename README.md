@@ -23,7 +23,7 @@ To get more weather data, the the following open source was used:
 - [Open-Meteo](https://open-meteo.com/)
 
 ## 2️⃣ Weather Data Preprocessing
-The used meteo data source is [here](https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/SSRN3F)<br />
+The used meteo data source is [here](https://rdr.kuleuven.be/dataset.xhtml?persistentId=doi:10.48804/SSRN3F).<br />
 To obtain past weather data, a selection of 7 weather stations near Naamsestraat (LC:065,087,102,109,112,117,118) was made.<br />
 These stations were used to create an averaged weather dataset.
 
@@ -55,4 +55,4 @@ In addition, we used Amazon S3 for data storage. The files uploaded to a S3 buck
 
 ## Appendix
 In this project, we utilized Python 3.9.5, which was used in the lecture, to set up a virtual environment.<br />
-The necessary packages are listed in the requirements.txt file.
+The necessary packages are listed in the [requirements.txt] (https://github.com/SarahSchrevens/MDA_project/blob/main/requirements.txt) file. 
