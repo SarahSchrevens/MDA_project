@@ -232,7 +232,7 @@ def scrape_depot_data():
             fourth_word = all_words[3]
             #keep only last 2 characters
             last_two3 = fourth_word[-2:]
-            str(last_two)
+            str(last_two3)
             #get rest of the words
             month3 = all_words[4] #get fifth word
             month3 = str(month3) 
